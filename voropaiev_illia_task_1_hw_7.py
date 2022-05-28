@@ -18,12 +18,13 @@ def square_parameters(data):  # check data is.digit and calculate square paramet
         diagonal: float = round(square_side / 0.707, 2)  # diagonal calculation
         area: int = square_side ** 2    # area calculation
 
-    # tuple with square parameters
+     # tuple with square parameters
     square_parameters_data: tuple = (perimeter, diagonal, area)
     print(square_parameters_data)
-
+    
     #  Use f string for calculated data printing
     print((f'Square Perimeter {perimeter} mm', f'Square diagonal {diagonal} mm', f'Square area {area} mm^2'))
+    return square_parameters_data
 
 
 square_parameters(user_data)
