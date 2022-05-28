@@ -20,6 +20,8 @@ def list_formatting(operation_list_1, operation_list_2):  # in first list input 
         [operation_list_1.insert(i, operation_list_2[i // 2]) for i in range(1, (len(operation_list_2) * 2), 2)]
 
         print(operation_list_1)
+        
+        return opertion_list_1
 
 
 list_formatting(list_one, list_two)
