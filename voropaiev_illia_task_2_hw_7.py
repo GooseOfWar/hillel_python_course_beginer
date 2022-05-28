@@ -21,6 +21,8 @@ def season_by_month(number_of_month):   # just print data from the dict
     print(
         f'{list_of_month[month_number - 1]} it\'s a {dict_of_month[list_of_month[month_number - 1]]} !'
     )
+    
+    return dict_of_month[list_of_month[month_number - 1]]
 
 
 season_by_month(user_data)
