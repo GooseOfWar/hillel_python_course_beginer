@@ -6,7 +6,8 @@ user_data: str = input('Fillup arguments. Use space as a separator\n')  # user i
 operating_data: list = list(user_data.split())  # convert user_data to list from str
 
 
-def data_max(*args: str) -> str:  # return max args
+def data_max(*args: str) -> str:
+    """This function return max from the args"""
     return max(args)
 
 
