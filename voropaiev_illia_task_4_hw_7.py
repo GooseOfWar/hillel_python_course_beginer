@@ -6,7 +6,8 @@
 user_string: str = input('Input the word\n')    # user fill the word
 
 
-def is_palindrome(check_word):  # compare user word with reverse user word
+def is_palindrome(check_word):
+    """Function compare user word with reverse user word"""
     return check_word == check_word[::-1]
 
 
