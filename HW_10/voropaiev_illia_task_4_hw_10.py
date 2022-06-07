@@ -22,7 +22,7 @@ while True:
     # user input converted to the list with .split method
     user_args: list = input("Input your args for summing\n").split()
     if user_args == ['q']:  # if input = q program will stop
-        print('Good bye')
+        print('Good bye!')
         break
 
     args_list = list(map(int, user_args))   # arguments from input convert to the int
