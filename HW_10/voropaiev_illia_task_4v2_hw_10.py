@@ -16,13 +16,13 @@
 
 import json
 
-"""for hard memory realise use .json file
-operation_memory dict will be used for comparison new and existing data
-.json file use not use format tuple so need use two dict
-one dict (hard_memory) for rewriting json file, use str as a key
-next dict (operation_memory) use tuple format for operation in program"""
+# for hard memory realise use .json file
+# operation_memory dict will be used for comparison new and existing data
+# .json file use not use format tuple so need use two dict
+# one dict (hard_memory) for rewriting json file, use str as a key
+# next dict (operation_memory) use tuple format for operation in program
 
-with open('task4_10.json', "r") as json_file:
+with open('task4_10.json', "r", encoding='ANSI') as json_file:
     operation_memory: dict = json.load(json_file)
     print(json.dumps(operation_memory, indent=2))  # show data in file
 
@@ -33,15 +33,18 @@ hard_memory: dict = operation_memory.copy()
 while True:
 
     # user input converted to the list with .split method
-    user_args: str = input("Input your args for summing\n")  # user args will be saved as a key for hard_memory dict
-    operation_args: list = user_args.split()    # operation list converted to the tuple and used for solving
+    # user args will be saved as a key for hard_memory dict
+    user_args: str = input("Input your args for summing\n")
+    # operation list converted to the tuple and used for solving
+    operation_args: list = user_args.split()
 
     if operation_args == ['q']:  # if input = q program will stop
         print('Good bye!')
         break
-
-    args_list = list(map(int, operation_args))   # arguments from input convert to the int
-    args_tuple: tuple = tuple(args_list)    # list with int args convert to the tuple because tuple is hashable
+    # arguments from input convert to the int
+    args_list = list(map(int, operation_args))
+    # list with int args convert to the tuple because tuple is hashable
+    args_tuple: tuple = tuple(args_list)
 
 
     def check_agrs_decorator(fun):
@@ -56,14 +59,12 @@ while True:
             if n_arg in operation_memory:
                 print("These arguments are already used".center(150, '_'))
                 return operation_memory[n_arg]
-
             # from .json file operation dict also receives str keys
             # because file read unformatted
             # for comparison used user_args as a key(because they have same key format - str)
-            elif user_args in operation_memory:
+            if user_args in operation_memory:  #TODO: тут был elif но pylint говорит лучше if
                 print("These arguments are already used".center(150, '_'))
                 return operation_memory[user_args]
-
             print("New args!".center(150, '_'))
             return fun(n_arg)
 
@@ -79,6 +80,6 @@ while True:
 
 
     print(hash_args(args_tuple))
-
-with open('task4_10.json', "w") as json_file:  # write new and read data form hard_memory dict to the file
+# write new and read data form hard_memory dict to the file
+with open('task4_10.json', "w", encoding='ANSI') as json_file:
     json.dump(hard_memory, json_file, indent=2)
