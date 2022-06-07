@@ -35,7 +35,7 @@ while True:
         If arguments already exist function get value from memory dict.
         In another case function use another function for solving sum"""
 
-        def wrapper(n_arg):
+        def wrapper(n_arg: tuple) -> int:
             """Wrapper"""
 
             if n_arg in memory_dict:
@@ -49,7 +49,7 @@ while True:
 
 
     @check_agrs_decorator
-    def hash_args(args):
+    def hash_args(args: tuple) -> int:
         """Function summing digital value and write value and results to the memory"""
         memory_dict[args] = sum(args)
         return sum(args)
