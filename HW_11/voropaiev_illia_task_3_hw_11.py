@@ -6,15 +6,25 @@
 from colorama import Fore, Style
 from typing import Union
 
-user_data_list: list = input("Enter number that should be devided\n").split()
+# take user input and convert to the list used .split
+user_data_list: list = input("Enter number that should be divided\n").split()
 
+# if user input 'q' cycle will stop
 while 'q' not in user_data_list:
 
+    # return massage if user input more then 2 value
     if len(user_data_list) > 2:
         print('Only first two value will be calculated\n')
 
 
     def devide_foo(arg_1: Union[int, float], arg_2: Union[int, float]) -> str:
+        """Function  give 2 arg and devide first arg on second
+
+            Example:
+                def devide_foo(x, y)
+                answer = x/y
+                print(answer)
+        """
         try:
             answer: float = round(float(arg_1) / float(arg_2), 4)
             print(answer)
@@ -32,4 +42,5 @@ while 'q' not in user_data_list:
         print(Fore.RED + f'No no {e}, you shall have at least 2 value\n')
         print(Style.RESET_ALL)
 
-    user_data_list: list = input("Enter number that should be devided\n").split()
+    # user_data_list should be rewritten here because user may input 'q' for stop
+    user_data_list: list = input("Enter number that should be divided\n").split()

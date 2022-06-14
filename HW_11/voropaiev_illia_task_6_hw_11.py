@@ -6,19 +6,18 @@
 """
 
 
-
 def example1():
     pass
-    # for i in range(3):
-    #     try:
-    #         x = int(input("enter a number: "))
-    #         y = int(input("enter another number: "))
-    #     except ValueError:
-    #         print('Use digital value')
-    #     try:
-    #         print(x, '/', y, '=', x / y)
-    #     except ZeroDivisionError:
-    #         print("Devision by zero")
+    for i in range(3):
+        try:  # try added to catch errors
+            x = int(input("enter a number: "))
+            y = int(input("enter another number: "))
+        except ValueError:
+            print('Use digital value')
+        try:
+            print(x, '/', y, '=', x / y)
+        except ZeroDivisionError:
+            print("Division by zero")
 
 
 def example2(L):
@@ -52,7 +51,6 @@ def printUpperFile(fileName):
             print(f'Sorry, but {e}')
 
 
-
 def main():
     example1()
     L = [10, 3, 5, 6, 9, 3]
@@ -61,5 +59,6 @@ def main():
 
     printUpperFile("doesNotExistYest.txt")
     printUpperFile("./Dessssktop/misspelled.txt")
+
 
 main()
