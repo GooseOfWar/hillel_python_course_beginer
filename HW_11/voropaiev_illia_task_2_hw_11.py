@@ -1,11 +1,14 @@
 """
 Скинуть файлик с примерами всех конструкций КРОМЕ менеджера контекста. With/as.
 """
+
+
 def catcher(word: str, index: int) -> str:
     try:
         return word[index]
     except IndexError:
         return "Word has no that index"
+
 
 def catcher2(word: str, index: int) -> str:
     try:
@@ -16,6 +19,7 @@ def catcher2(word: str, index: int) -> str:
 
 class MyError(Exception):
     pass
+
 
 def catcher3(word: str, index: int) -> str:
     try:
