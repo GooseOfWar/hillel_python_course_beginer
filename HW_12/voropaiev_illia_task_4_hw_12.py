@@ -6,9 +6,10 @@
 
 from file_for_class import Visibility
 
-vis = Visibility()
+vis1 = Visibility(1, 2)
+vis2 = Visibility(2, 4)
 
 
-print(vis.some_f1(1, 2), vis.local_vis)
-print(vis.some_f1(2, 4), vis.local_vis)
+print(vis1, vis1.local_vis())
+print(vis2, vis2.vars_vis())
 
