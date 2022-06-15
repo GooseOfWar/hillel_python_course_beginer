@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="31cc331f-79c8-4616-ab59-23c35e5b842a" name="Changes" comment="Used round to divide">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="31cc331f-79c8-4616-ab59-23c35e5b842a" name="Changes" comment="Use vars and locals() to see difference">
       <change beforePath="$PROJECT_DIR$/HW_12/file_for_class.py" beforeDir="false" afterPath="$PROJECT_DIR$/HW_12/file_for_class.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HW_12/voropaiev_illia_task_4_hw_12.py" beforeDir="false" afterPath="$PROJECT_DIR$/HW_12/voropaiev_illia_task_4_hw_12.py" afterDir="false" />
     </list>
@@ -264,7 +263,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655286397160</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Use vars and locals() to see difference">
+      <created>1655287232785</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1655287232785</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -281,7 +287,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Try work with pycharm JB" />
     <MESSAGE value="Used round to divide" />
-    <option name="LAST_COMMIT_MESSAGE" value="Used round to divide" />
+    <MESSAGE value="Use vars and locals() to see difference" />
+    <option name="LAST_COMMIT_MESSAGE" value="Use vars and locals() to see difference" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
