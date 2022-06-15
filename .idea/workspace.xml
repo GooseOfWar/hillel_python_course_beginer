@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="31cc331f-79c8-4616-ab59-23c35e5b842a" name="Changes" comment="Use vars and locals() to see difference">
-      <change beforePath="$PROJECT_DIR$/HW_12/file_for_class.py" beforeDir="false" afterPath="$PROJECT_DIR$/HW_12/file_for_class.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HW_12/voropaiev_illia_task_4_hw_12.py" beforeDir="false" afterPath="$PROJECT_DIR$/HW_12/voropaiev_illia_task_4_hw_12.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW_12/voropaiev_illia_task_1_hw_12.py" beforeDir="false" afterPath="$PROJECT_DIR$/HW_12/voropaiev_illia_task_1_hw_12.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW_12/voropaiev_illia_task_2_hw_12.py" beforeDir="false" afterPath="$PROJECT_DIR$/HW_12/voropaiev_illia_task_2_hw_12.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW_12/voropaiev_illia_task_3_hw_12.py" beforeDir="false" afterPath="$PROJECT_DIR$/HW_12/voropaiev_illia_task_3_hw_12.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -270,7 +271,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655287232785</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Use vars and locals() to see difference">
+      <created>1655287599924</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1655287599924</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -300,7 +308,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/HW_12/voropaiev_illia_task_1_hw_12.py</url>
-          <line>43</line>
+          <line>46</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>

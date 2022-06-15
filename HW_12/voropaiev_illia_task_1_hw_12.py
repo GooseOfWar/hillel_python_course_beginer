@@ -1,6 +1,9 @@
 """
 написать 3 примера генераторных функций с различными последовательностями
 """
+
+# ___________________________ ITS JUST A SAMPLES. NO COMMENTS ___________________________
+
 from functools import reduce
 
 val_1 = 1
@@ -33,7 +36,7 @@ def my_gen2():
 
 
 def me_gen3(arg_1: list, arg_2: list):
-    yield reduce(lambda x,y:x+y, [val_3, val_2, val_1])
+    yield reduce(lambda x, y: x + y, [val_3, val_2, val_1])
     yield arg_2
     yield arg_1
     for i in range(len(arg_1)):

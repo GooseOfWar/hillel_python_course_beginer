@@ -38,6 +38,7 @@ def my_reduce(function, sequence, initial=0):
     return value
 
 
+# list that will use
 numbers: list = [10, 50, 5, 6, 6, 8, 95, 602, 5665, 30, 54]
 
 my_fun_1 = my_reduce(lambda x, y: x + y, numbers)
