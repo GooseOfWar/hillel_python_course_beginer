@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="31cc331f-79c8-4616-ab59-23c35e5b842a" name="Changes" comment="Used round to divide" />
+    <list default="true" id="31cc331f-79c8-4616-ab59-23c35e5b842a" name="Changes" comment="Used round to divide">
+      <change afterPath="$PROJECT_DIR$/HW_12/file_for_class.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HW_12/voropaiev_illia_task_2_hw_12.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HW_12/voropaiev_illia_task_3_hw_12.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HW_12/voropaiev_illia_task_4_hw_12.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW_12/voropaiev_illia_task_1_hw_12.py" beforeDir="false" afterPath="$PROJECT_DIR$/HW_12/voropaiev_illia_task_1_hw_12.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,28 +51,7 @@
       <recent name="C:\Users\Capibara\Documents\GitHub\hillel_python_course_beginer" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.ddd (1)">
-    <configuration name="aaa" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="hillel_python_course_beginer" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/HW_11" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/HW_11/aaa.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.voropaiev_illia_task_4_hw_12">
     <configuration name="ddd (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="hillel_python_course_beginer" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -87,7 +73,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="voropaiev_illia_task_2_hw_11" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="voropaiev_illia_task_1_hw_12" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="hillel_python_course_beginer" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -95,11 +81,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/HW_11" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/HW_12" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/HW_11/voropaiev_illia_task_2_hw_11.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/HW_12/voropaiev_illia_task_1_hw_12.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -108,7 +94,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="voropaiev_illia_task_3_hw_11" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="voropaiev_illia_task_2_hw_12" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="hillel_python_course_beginer" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -116,11 +102,32 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/HW_11" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/HW_12" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/HW_11/voropaiev_illia_task_3_hw_11.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/HW_12/voropaiev_illia_task_2_hw_12.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="voropaiev_illia_task_3_hw_12" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="hillel_python_course_beginer" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/HW_12" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/HW_12/voropaiev_illia_task_3_hw_12.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -150,7 +157,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="voropaiev_illia_task_6_hw_11" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="voropaiev_illia_task_4_hw_12" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="hillel_python_course_beginer" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -158,11 +165,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/HW_11" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/HW_12" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/HW_11/voropaiev_illia_task_6_hw_11.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/HW_12/voropaiev_illia_task_4_hw_12.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -173,11 +180,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.voropaiev_illia_task_4_hw_12" />
+        <item itemvalue="Python.voropaiev_illia_task_3_hw_12" />
+        <item itemvalue="Python.voropaiev_illia_task_2_hw_12" />
+        <item itemvalue="Python.voropaiev_illia_task_1_hw_12" />
         <item itemvalue="Python.ddd (1)" />
-        <item itemvalue="Python.voropaiev_illia_task_3_hw_11" />
-        <item itemvalue="Python.voropaiev_illia_task_6_hw_11" />
-        <item itemvalue="Python.voropaiev_illia_task_2_hw_11" />
-        <item itemvalue="Python.aaa" />
       </list>
     </recent_temporary>
   </component>
@@ -246,7 +253,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655208385900</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Used round to divide">
+      <created>1655209033881</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1655209033881</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -270,8 +284,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/HW_11/voropaiev_illia_task_6_hw_11.py</url>
-          <line>64</line>
+          <line>63</line>
           <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/HW_12/voropaiev_illia_task_1_hw_12.py</url>
+          <line>43</line>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
