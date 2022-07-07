@@ -98,7 +98,6 @@ class Weather:
         result = response_variant[cod]
         return result
 
-# print(Weather.API_KEY)
 if __name__ == '__main__':
     zp_weather = Weather('fff')  # 'London'
     print(zp_weather.response)
