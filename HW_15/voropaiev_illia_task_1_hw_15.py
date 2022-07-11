@@ -3,27 +3,6 @@
 2. Вынести некоторрые данные в константу(ы).
 3. Для запуска функции использовать if __name__ == '__main__': запуск!
 4. Создать файл test.py  внутри создать Класс для тестирования функции, с помощью unittest.
-
-import requests
-
-base_url = 'http://api.openweathermap.org/data/2.5/weather?'
-
-city_name = input('please fill up your city')
-
-API_KEY = 'd82759ebf4a4a5ed987117c4027b9dfa' # if API_KEY not works, generate yours on website
-
-complete_url = base_url + "appid=" + API_KEY + "&q=" + city_name
-response = requests.get(complete_url)
-r_data = response.json()
-if r_data["cod"] != "404":
-    y = r_data['main']
-    current_t = y['temp']
-    current_p = y["pressure"]
-    z = r_data["weather"]
-    weather_description = z[0]["description"]
-    print(str((round(current_t - 273.15))), str(current_p))
-else:
-    print('city not found')
 """
 
 import requests
