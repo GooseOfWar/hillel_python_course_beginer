@@ -3,30 +3,12 @@
 2. Вынести некоторрые данные в константу(ы).
 3. Для запуска функции использовать if __name__ == '__main__': запуск!
 4. Создать файл test.py  внутри создать Класс для тестирования функции, с помощью unittest.
-
-import requests
-
-base_url = 'http://api.openweathermap.org/data/2.5/weather?'
-
-city_name = input('please fill up your city')
-
-API_KEY = 'd82759ebf4a4a5ed987117c4027b9dfa' # if API_KEY not works, generate yours on website
-
-complete_url = base_url + "appid=" + API_KEY + "&q=" + city_name
-response = requests.get(complete_url)
-r_data = response.json()
-if r_data["cod"] != "404":
-    y = r_data['main']
-    current_t = y['temp']
-    current_p = y["pressure"]
-    z = r_data["weather"]
-    weather_description = z[0]["description"]
-    print(str((round(current_t - 273.15))), str(current_p))
-else:
-    print('city not found')
 """
 
 import requests
+
+BASE_URL: str = 'http://api.openweathermap.org/data/2.5/weather?'
+API_KEY: str = 'd82759ebf4a4a5ed987117c4027b9dfa'  # if API_KEY not works, generate yours on website
 
 
 class Weather:
@@ -39,20 +21,18 @@ class Weather:
     complete_url = Weather.BASE_URL + "appid=" + Weather.API_KEY + "&q=" + self.city
     """
 
-    BASE_URL = 'http://api.openweathermap.org/data/2.5/weather?'
-    API_KEY = 'd82759ebf4a4a5ed987117c4027b9dfa'  # if API_KEY not works, generate yours on website
-
-    def __init__(self, sity_name):
-        self.city = sity_name
+    def __init__(self, city_name: str):
+        self.city = city_name
 
     @property
-    def _data_getter(self) -> dict or str:
-        complete_url = Weather.BASE_URL + "appid=" + Weather.API_KEY + "&q=" + self.city
-        response = requests.get(complete_url)
-        raw_data = response.json()
+    def _data_getter(self) -> dict | str:
+        complete_url: str = BASE_URL + "appid=" + API_KEY + "&q=" + self.city
+        response: any = requests.get(complete_url)
+        raw_data: dict | str = response.json()
         return raw_data
 
-    def _data_hendler(self):
+    @property
+    def _data_handler(self) -> str:
         """
         Function take City Name as arg
         Return:
@@ -62,11 +42,11 @@ class Weather:
         """
         weather_data: dict = self._data_getter
 
-        main_data = weather_data['main']
-        secondary_data = weather_data["weather"]
+        main_data: dict = weather_data['main']
+        secondary_data: dict = weather_data["weather"]
 
-        current_t = main_data['temp']
-        current_p = main_data["pressure"]
+        current_t: float = main_data['temp']
+        current_p: str = main_data["pressure"]
 
         weather_description: str = secondary_data[0]["description"]
 
@@ -76,28 +56,18 @@ class Weather:
                f'Air Pressure: {str(current_p)}mm Hg'
 
     @property
-    def response(self):
+    def response(self) -> object:
         """Make server_response for 401, 404, 200 cod"""
-
         try:
             server_response: dict = self._data_getter
         except TypeError:
             return "Use the city Name"
         cod = server_response['cod']
-        # Это не работает так как дикт пытается иницыалироваться в любом случае. Что с этим делать?
-        # response_variant = {200: self._data_hendler,
-        #                     401: server_response['message'],
-        #                     '404': server_response['message']}
-        # result = response_variant[cod]
-        # return result
-
         if cod == 200:
-            return self._data_hendler()
-        response_variant = {401: server_response['message'],
-                            '404': server_response['message']}
-        result = response_variant[cod]
-        return result
+            return self._data_handler
+        return server_response['message']
+
 
 if __name__ == '__main__':
-    zp_weather = Weather('fff')  # 'London'
+    zp_weather = Weather('Kharkiv')  # 'London'
     print(zp_weather.response)
