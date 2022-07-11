@@ -4,11 +4,12 @@ Test for weather_in_city fun
 
 from unittest import TestCase, main
 
-from HW_15.voropaiev_illia_task_1_hw_15 import Weather
+import HW_15.voropaiev_illia_task_1_hw_15 as HW
 
+Weather = HW.Weather
 
 class TestWeatherInCity(TestCase):
-    #
+    """It,s TESTS for testing Weather class"""
     def test_city_1(self):
         """Test case: wrong City Name"""
         new_weather1 = Weather('fffddf')
@@ -30,12 +31,13 @@ class TestWeatherInCity(TestCase):
     def test_wrong_api(self):
         """Test case: wrong API"""
 
-        Weather.API_KEY = 'd8275000000000000000'
+        HW.API_KEY = 'd8275000000000000000'
         new_weather = Weather('London')
         result = new_weather.response
 
         self.assertEqual(result, 'Invalid API key.'
-                                 ' Please see http://openweathermap.org/faq#error401 for more info.')
+                                 ' Please see http://openweathermap.org/faq#error401'
+                                 ' for more info.')
 
 
 if __name__ == '__main__':
